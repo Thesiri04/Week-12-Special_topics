@@ -13,7 +13,7 @@
 static const char* TAG = "ESP_NOW_SENDER";
 
 // MAC Address ของ Receiver (ต้องเปลี่ยนตามของจริง)
-static uint8_t receiver_mac[6] = {0x24, 0x6F, 0x28, 0xAA, 0xBB, 0xCC};
+static uint8_t receiver_mac[6] = {0x94, 0xB5, 0x55, 0xF6, 0xF6, 0x40};
 
 // ข้อมูลที่จะส่ง
 typedef struct {
@@ -23,7 +23,8 @@ typedef struct {
 } esp_now_data_t;
 
 // Callback เมื่อส่งข้อมูลเสร็จ
-void on_data_sent(const uint8_t *mac_addr, esp_now_send_status_t status) {
+void on_data_sent(const wifi_tx_info_t *info, esp_now_send_status_t status) {
+    (void) info; // info may contain TX details; not always needed
     if (status == ESP_NOW_SEND_SUCCESS) {
         ESP_LOGI(TAG, "✅ Data sent successfully");
     } else {
