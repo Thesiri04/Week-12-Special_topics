@@ -15,7 +15,7 @@
 static const char* TAG = "ESP_NOW_CHAT";
 
 // MAC Address ของอีกตัว (ต้องเปลี่ยนตามของจริง)
-static uint8_t partner_mac[6] = {0x94,0xB5,0x55,0xF8,0x22,0x78};
+static uint8_t partner_mac[6] = {0x94,0xB5,0x55,0xF6,0xF6,0x40};
 
 // โครงสร้างข้อความแชท
 typedef struct __attribute__((packed)) {

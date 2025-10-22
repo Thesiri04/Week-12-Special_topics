@@ -27,7 +27,7 @@ static const char* TAG = "ESP_NOW_SENSOR_TX";
 
 /* ★★ ตั้ง MAC ของ “ตัวรับ” (อีกบอร์ด) ให้ถูกต้องก่อนใช้งาน ★★
    ตัวอย่าง 94:B5:55:F8:5D:50 -> {0x94,0xB5,0x55,0xF8,0x5D,0x50} */
-static uint8_t partner_mac[6] = {0x94,0xB5,0x55,0xF8,0x22,0x78};
+static uint8_t partner_mac[6] = {0x94,0xB5,0x55,0xF6,0xF6,0x40};
 
 /* === กำหนดขาเซ็นเซอร์ ===
    DHT11: ต่อที่ GPIO4 (ปรับตามการต่อจริง)
