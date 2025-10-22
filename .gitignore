@@ -1,0 +1,72 @@
+# Build artifacts
+/build/
+/esp_now_test/build/
+**/build/
+
+# CMake and IDF files
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# sdkconfig files (keep sdkconfig.defaults under source control if you use it)
+/sdkconfig
+/sdkconfig.old
+
+# IDF Python environment
+.python_env/
+.venv/
+env/
+
+# Visual Studio Code
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+
+# CLion
+.idea/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# object files, libraries
+*.o
+*.a
+*.so
+*.elf
+
+# Serial logs, binary outputs
+*.bin
+*.log
+
+# Unity test app and coverage
+unity_*.out
+coverage/
+
+# pycache
+__pycache__/
+*.pyc
+
+# Python package files
+pip-wheel-metadata/
+*.egg-info/
+
+# Misc
+*.swp
+*~
+
+# PlatformIO (if used)
+.pio/
+
+# Espressif IDF component manager (cache)
+.espressif/components/
+
+# Local components directory (if generated)
+components/**/build/
+
+# Keep project specific files tracked: if you have a sdkconfig.defaults, keep it
+# by adding a negation rule in your local .gitignore if needed.
