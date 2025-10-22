@@ -15,7 +15,7 @@
 
 static const char* TAG = "ESP_NOW_LED_RX";
 
-static uint8_t partner_mac[6] = { 0x24,0xD7,0xEB,0x0E,0xA5,0xB4 };
+static uint8_t partner_mac[6] = {0x94, 0xB5, 0x55, 0xF8, 0x30, 0xF4};
 
 #define CHANNEL          1      
 #define LED_PIN          2      
